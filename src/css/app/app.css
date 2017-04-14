@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    background: #050d19;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.selected{
+    color: red;
+    font-weight: bold;
+}
