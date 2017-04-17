@@ -1,7 +1,7 @@
 # react-webpack
 
-开发<br>
-npm run dev
+<p><b>开发</b></p>
+<p>npm run start<p>
 
-生产<br>
-npm run build
+<p><b>生产</b><p>
+<p>npm run build<p>
