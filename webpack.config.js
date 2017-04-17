@@ -55,8 +55,8 @@ const myWebpackConfig = {
     },
     devtool: 'cheap-module-source-map',
     devServer: {
-        compress: true,
         port: 2333,
+        compress: true, /* gizp */
         publicPath: '/dist/',
     },
     plugins: [
