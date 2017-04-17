@@ -3,13 +3,13 @@
 let path = require('path');
 let glob = require('glob');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
-//let CompressionWebpackPlugin = require('compression-webpack-plugin');
+//let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const myWebpackConfig = {
     entry: path.resolve(__dirname,'./src/js/app/app.jsx'),
     output: {
-        path: path.resolve(__dirname,'./dist'),
-        filename: 'index.js',
+        path: path.resolve(__dirname),
+        filename: 'dist/index.js',
     },
     resolve: {
         extensions: [
@@ -57,11 +57,13 @@ const myWebpackConfig = {
     devServer: {
         port: 2333,
         compress: true, /* gizp */
-        publicPath: '/dist/',
+        publicPath: '/',
+        inline: true,
+        historyApiFallback: true,
     },
     plugins: [
-        new ExtractTextPlugin('index.css'),
-
+        new ExtractTextPlugin('dist/index.css'),
+        //new HtmlWebpackPlugin(),
     ]
 
 };
