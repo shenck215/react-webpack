@@ -3,7 +3,7 @@
 let path = require('path');
 let glob = require('glob');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
-//let HtmlWebpackPlugin = require('html-webpack-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const myWebpackConfig = {
     entry: path.resolve(__dirname,'./src/js/app/app.jsx'),
@@ -63,7 +63,11 @@ const myWebpackConfig = {
     },
     plugins: [
         new ExtractTextPlugin('dist/index.css'),
-        //new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'My App',
+            inject: true,
+            template: path.resolve(__dirname,'./index.html'),
+        }),
     ]
 
 };
