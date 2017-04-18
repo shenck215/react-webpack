@@ -1,0 +1,16 @@
+.register-form {
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+.ant-form-item-label label{
+  color: #fff;
+}
+
+.ant-form-item .icp-selector{
+  width: 55px;
+}
+
+.ant-checkbox-wrapper span{
+  color: #fff;
+}
