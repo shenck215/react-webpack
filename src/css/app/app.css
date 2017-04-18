@@ -13,7 +13,7 @@ body {
     -ms-flex: 1;
     -webkit-flex: 1;
     flex: 1;
-    background: #050d19;
+    background: rgb(5, 13, 25);
     text-align: center;
     padding: 10px 0;
     font-size: 14px;

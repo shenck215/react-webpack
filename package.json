@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js --progress",
-    "build": "webpack --config webpack.config.js --progress"
+    "start": "webpack-dev-server --config webpack.config.babel.js --progress",
+    "build": "webpack --config webpack.config.babel.js --progress"
   },
   "author": "",
   "license": "ISC",

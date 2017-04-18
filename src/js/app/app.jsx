@@ -17,6 +17,7 @@ import Badge from '../Badge/badge';
 import LoginApp from '../Form/login';
 import RegisterApp from '../Form/register';
 import CustomApp from '../Form/custom';
+import '../background/background';
 import '../../css/app/app';
 
 /* eslint-disable */
