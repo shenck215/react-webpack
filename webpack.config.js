@@ -1,5 +1,6 @@
 'use strict'
 
+let webpack = require('webpack');
 let path = require('path');
 let glob = require('glob');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -68,6 +69,11 @@ const myWebpackConfig = {
         //     inject: true,
         //     template: path.resolve(__dirname,'./index.html'),
         // }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': '"production"'
+            }
+        }),
     ]
 
 };

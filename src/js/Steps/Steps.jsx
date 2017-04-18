@@ -25,6 +25,10 @@ class StepsApp extends Component {
 
     constructor(props) {
         super(props);
+        
+    }
+
+    componentWillMount() {
         this.state = {
             current: 0,
         };
