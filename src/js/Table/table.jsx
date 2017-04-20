@@ -9,6 +9,7 @@ import {
     Radio,
 } from 'antd';
 import 'antd/dist/antd.less';
+import '../../css/Table/Table';
 
 /*eslint-disable */
 

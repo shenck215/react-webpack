@@ -17,6 +17,7 @@ import Badge from '../Badge/badge';
 import LoginApp from '../Form/login';
 import RegisterApp from '../Form/register';
 import CustomApp from '../Form/custom';
+import Table from '../Table/table';
 import '../background/background';
 import '../../css/app/app';
 
@@ -34,6 +35,7 @@ const App  = () => (
         <li><NavLink to="/AutoComplete" activeClassName="selected">AutoComplete</NavLink></li>
         <li><NavLink to="/Badge" activeClassName="selected">Badge</NavLink></li>
         <li><NavLink to="/LoginApp" activeClassName="selected">LoginApp</NavLink></li>
+        <li><NavLink to="/Table" activeClassName="selected">Table</NavLink></li>
       </ul>
 
       <Route exact path="/" component={IndexApp}/>
@@ -45,6 +47,7 @@ const App  = () => (
       <Route path="/LoginApp" component={LoginApp}/>
       <Route path="/RegisterApp" component={RegisterApp}/>
       <Route path="/CustomApp" component={CustomApp}/>
+      <Route path="/Table" component={Table}/>
     </div>
   </Router>
 )
