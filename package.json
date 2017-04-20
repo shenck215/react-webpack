@@ -1,5 +1,5 @@
 {
-  "name": "shenck",
+  "name": "react-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --config webpack.config.babel.js --progress",
     "build": "webpack --config webpack.config.babel.js --progress"
   },
-  "author": "",
+  "author": "shenck",
   "license": "ISC",
   "dependencies": {
     "antd": "^2.9.1",
