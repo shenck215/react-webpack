@@ -3,7 +3,7 @@
   margin: 60px auto;
 }
 
-.ant-form-item-label label{
+.ant-form-item-label label.ant-form-item-required{
   color: #fff;
 }
 
