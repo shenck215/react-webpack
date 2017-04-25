@@ -1,0 +1,11 @@
+.marginTop {
+    margin-top: 20px;
+}
+
+.divMargin {
+    composes: marginTop;/*继承marginTop类的样式*/
+}
+
+:global(.ant-badge-status-text) {
+    color: #FFF !important;
+}
