@@ -18,7 +18,7 @@ body {
     padding: 10px 0;
     font-size: 14px;
 }
-#canvas {
+:global(#canvas) {
     position: absolute;
     top: 0;
     left: 0;

@@ -4,7 +4,6 @@ import React,{
 import {
     Transfer,
 } from 'antd';
-import 'antd/dist/antd.less';
 
 /* eslint-disable */
 const dataSource = [];

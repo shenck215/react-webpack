@@ -7,8 +7,7 @@ import {
     Col,
     DatePicker,
 } from 'antd';
-import 'antd/dist/antd.less';
-import '../../css/Form/custom.css';
+import customStyle from '../../css/Form/custom';
 
 /* eslint-disable */
 const FormItem = Form.Item;
@@ -22,7 +21,7 @@ class customApp extends Component {
 
     render() {
         return (
-            <Form style={{marginTop: 20}} className="form">
+            <Form style={{marginTop: 20}} className={customStyle.form}>
                 <FormItem
                     label="Fail"
                     labelCol={{ span: 5 }}

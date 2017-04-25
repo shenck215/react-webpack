@@ -2,7 +2,6 @@ import React from 'react';
 import {
     Alert,
 } from 'antd';
-import 'antd/dist/antd.less';
 
 /* eslint-disable */
 

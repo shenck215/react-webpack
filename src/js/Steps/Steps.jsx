@@ -4,8 +4,7 @@ import {
     Button,
     message,
 } from 'antd';
-import '../../css/Steps/Steps.css';
-import 'antd/dist/antd.less';
+import stepsStyle from '../../css/Steps/Steps';
 
 /* eslint-disable */
 const Step = Steps.Step;
@@ -67,10 +66,10 @@ class StepsApp extends Component {
                     steps.map(item => <Step key={item.title} title={item.title} />)
                 }
                 </Steps>
-                <div className="steps-content">
+                <div className={stepsStyle.stepsContent}>
                     {steps[this.state.current].content}
                 </div>
-                <div className="steps-action">
+                <div className={stepsStyle.stepsAction}>
                     {
                         this.state.current < steps.length - 1
                         &&
@@ -79,12 +78,12 @@ class StepsApp extends Component {
                     {
                         this.state.current > 0
                         &&
-                        <Button className="marginLeft" type="primary" onClick={() => this.prev()}>Previous</Button>
+                        <Button className={stepsStyle.marginLeft} type="primary" onClick={() => this.prev()}>Previous</Button>
                     }
                     {
                         this.state.current === steps.length - 1
                         &&
-                        <Button className="marginLeft" type="primary" onClick={() => this.commit()}>Commit</Button>
+                        <Button className={stepsStyle.marginLeft} type="primary" onClick={() => this.commit()}>Commit</Button>
                     }
                 </div>
                 

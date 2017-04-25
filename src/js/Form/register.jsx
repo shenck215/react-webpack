@@ -11,8 +11,7 @@ import {
     Checkbox,
     Button,
 } from 'antd';
-import 'antd/dist/antd.less';
-import '../../css/Form/register.css';
+import registerStyle from '../../css/Form/register';
 
 /* eslint-disable */
 const FormItem = Form.Item;
@@ -100,7 +99,7 @@ class myAppRegister extends Component {
         );
 
         return (
-            <Form style={{marginTop: 20}} className = "register-form">
+            <Form style={{marginTop: 20}} className = {registerStyle.registerForm}>
                 <FormItem
                     {...formItemLayout}
                     label="E-mail"

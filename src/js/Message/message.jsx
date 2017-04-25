@@ -5,7 +5,6 @@ import {
     message,
     Button,
 } from 'antd';
-import 'antd/dist/antd.less';
 import '../../css/Message/message.css';
 
 

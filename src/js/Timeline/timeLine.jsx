@@ -4,7 +4,6 @@ import React,{
 import {    
     Timeline,
 } from 'antd';
-import 'antd/dist/antd.less';
 
 const TimelineItem = Timeline.Item;
 

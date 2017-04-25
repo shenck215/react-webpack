@@ -4,9 +4,7 @@ import {
     Menu,
     Icon,
  } from 'antd';
-import '../../css/SubMenu/myApp.css';
-import 'antd/dist/antd.less';
-
+import myAppStyle from '../../css/SubMenu/myApp';
 const SubMenu = Menu.SubMenu;
 
 /* eslint-disable */

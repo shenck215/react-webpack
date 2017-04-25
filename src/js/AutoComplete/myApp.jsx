@@ -4,7 +4,6 @@ import React,{
 import {
     AutoComplete,
 } from 'antd';
-import 'antd/dist/antd.less';
 
 /* eslint-disable */
 const Option = AutoComplete.Option;

@@ -4,7 +4,6 @@ import React,{
 import {
     Tree,
 }from 'antd';
-import 'antd/dist/antd.less';
 
 const TreeNode = Tree.TreeNode;
 

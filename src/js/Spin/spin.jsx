@@ -6,7 +6,6 @@ import {
     Switch, 
     Alert 
 } from 'antd';
-import 'antd/dist/antd.less';
 
 class SpinApp extends Component {
 

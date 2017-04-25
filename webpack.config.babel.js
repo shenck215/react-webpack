@@ -4,10 +4,12 @@ import webpack from 'webpack';
 import path from 'path';
 import glob from 'glob';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import precss from 'precss';
+import autoprefixer from 'autoprefixer';
 //import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const myWebpackConfig = {
-    entry: path.resolve(__dirname,'./src/js/app/app.jsx'),
+    entry: path.resolve(__dirname, './src/js/app/app.jsx'),
     output: {
         path: path.resolve(__dirname),
         filename: 'dist/index.js',
@@ -29,15 +31,19 @@ const myWebpackConfig = {
                 loader: 'babel-loader',
                 query: {
                     plugins: [
-                        ['import',[{ libraryName: 'antd', style: true }]]
+                        ['import', [{ libraryName: 'antd', style: true }]]
                     ],
                 }
             },
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
-                    use: 'css-loader',
                     fallback: 'style-loader',
+                    use: [
+                        'css-loader?modules&localIdentName=[path][name]---[local]---[hash:base64:5]',
+                        'postcss-loader'
+                    ],
+
                 })
             },
             {
@@ -74,6 +80,14 @@ const myWebpackConfig = {
                 'NODE_ENV': '"production"'
             }
         }),
+
+        new webpack.LoaderOptionsPlugin({
+            options: {
+                postcss: function () {
+                    return [precss, autoprefixer];
+                },
+            }
+        })
     ]
 
 };

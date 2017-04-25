@@ -5,7 +5,6 @@ import {
     Button,
     notification,
 } from 'antd';
-import 'antd/dist/antd.less';
 import '../../css/Notification/notification.css';
 
 /*eslint-disable */

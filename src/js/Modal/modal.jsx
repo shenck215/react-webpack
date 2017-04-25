@@ -5,7 +5,6 @@ import {
     Modal,
     Button,
 } from 'antd';
-import 'antd/dist/antd.less';
 
 
 /* eslint-disable */

@@ -5,8 +5,7 @@ import {
     Progress,
     Button,
 } from 'antd';
-import 'antd/dist/antd.less';
-import '../../css/Progress/progress.css';
+import progressStyle from '../../css/Progress/progress';
 
 const ButtonGroup = Button.Group;
 
@@ -68,12 +67,12 @@ class ProgressApp extends Component {
     render() {
         return (
             <div>
-                <Progress className="click_progress" type="circle" percent={this.state.circlePercent} format={percent => `${percent}个光波`}/>
+                <Progress className={progressStyle.clickProgress} type="circle" percent={this.state.circlePercent} format={percent => `${percent}个光波`}/>
                 <ButtonGroup style={{marginLeft: 10}}>
                     <Button onClick={this.handleCircleAdd}>+</Button>
                     <Button onClick={this.handleCircleSub}>-</Button>
                 </ButtonGroup>
-                <Progress className="line_progress" type="line" percent={this.state.linePercent}/>
+                <Progress className={progressStyle.lineProgress} type="line" percent={this.state.linePercent}/>
                 <ButtonGroup style={{marginTop: 10}}>
                     <Button onClick={this.handleLineAdd}>+</Button>
                     <Button onClick={this.handleLineSub}>-</Button>

@@ -6,8 +6,7 @@ import {
     Icon,
     Modal,
 } from 'antd';
-import 'antd/dist/antd.less';
-import '../../css/Upload/upload.css';
+import uploadStyle from '../../css/Upload/upload';
 
 class uploadApp extends Component {
 

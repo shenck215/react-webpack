@@ -12,8 +12,7 @@ import {
 import {
     Link,
 } from 'react-router-dom';
-import 'antd/dist/antd.less';
-import '../../css/Form/login.css';
+import loginStyle from '../../css/Form/login';
 
 /* eslint-disable */
 const FormItem = Form.Item;
@@ -55,7 +54,7 @@ class myAppLogin extends Component {
         const passWordError = isFieldTouched('password') && getFieldError('password');
 
         return (
-            <Form className="login-form" onSubmit={(e) => {this.onSubmit(e)}}>
+            <Form className={loginStyle.loginForm} onSubmit={(e) => {this.onSubmit(e)}}>
                 <p></p>
                 <FormItem 
                     validateStatus = {userNameError? 'warning': ''} help = {userNameError || ''}
@@ -99,10 +98,10 @@ class myAppLogin extends Component {
                             <Checkbox>Remember me</Checkbox>
                         )
                     }
-                    <Link to="/CustomApp" className="login-form-forgot">Forgot password</Link>
+                    <Link to="/CustomApp" className={loginStyle.loginFormForgot}>Forgot password</Link>
                     <Button
                         type="primary" 
-                        htmlType="submit" className="login-form-button"
+                        htmlType="submit" className={loginStyle.loginFormButton}
                         disabled = {hasError(getFieldsError())}
                     >
                         Log in

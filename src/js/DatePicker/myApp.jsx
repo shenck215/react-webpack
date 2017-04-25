@@ -4,7 +4,6 @@ import React,{
 import {
     DatePicker,
 } from 'antd';
-import 'antd/dist/antd.less';
 
 
 /*eslint-disable */

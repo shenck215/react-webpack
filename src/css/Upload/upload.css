@@ -1,4 +1,4 @@
-.ant-upload-select-picture-card .anticon-plus {
+:global(.ant-upload-select-picture-card) :global(.anticon-plus) {
     font-size: 28px;
     color: #999;
     position: relative;

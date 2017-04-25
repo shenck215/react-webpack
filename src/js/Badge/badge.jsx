@@ -4,7 +4,7 @@ import React,{
 import {
     Badge,
 } from 'antd';
-import 'antd/dist/antd.less';
+import badgeStyle from '../../css/badge/badge';
 
 /* eslint-disable */
 class BadgeApp extends Component {
@@ -15,7 +15,7 @@ class BadgeApp extends Component {
 
     render() {
         return(
-            <div style={{marginTop: 20}}>
+            <div className={badgeStyle.divMargin}>
                 <Badge count={120} overflowCount={99}>
                     
                 </Badge>

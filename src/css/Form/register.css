@@ -1,16 +1,16 @@
-.register-form {
+.registerForm {
   max-width: 600px;
   margin: 60px auto;
 }
 
-.ant-form-item-label label.ant-form-item-required{
+:global(.ant-form-item-label) :global(.ant-form-item-required){
   color: #fff;
 }
 
-.ant-form-item .icp-selector{
+:global(.ant-form-item) :global(.icp-selector){
   width: 55px;
 }
 
-.ant-checkbox-wrapper span{
+:global(.ant-checkbox-wrapper) span{
   color: #fff;
 }

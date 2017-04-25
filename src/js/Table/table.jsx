@@ -8,8 +8,7 @@ import {
     Switch,
     Radio,
 } from 'antd';
-import 'antd/dist/antd.less';
-import '../../css/Table/Table';
+import tableStyle from '../../css/Table/Table';
 
 /*eslint-disable */
 
@@ -173,7 +172,7 @@ class TableApp extends Component {
 
     render() {
         return (
-            <div className="components-table-demo-control-bar">
+            <div className={tableStyle.componentsTableDemoControlBar}>
                 <Form layout="inline">
                     <FormItem label="bordered">
                         <Switch checked={this.state.bordered} onChange={this.handleToggle('bordered')}></Switch>
